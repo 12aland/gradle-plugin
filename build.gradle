@@ -3,6 +3,7 @@ plugins {
     id 'java-gradle-plugin'
     id 'groovy'
     id 'maven-publish'
+    id "com.github.johnrengelman.shadow" version "5.1.0"
 }
 
 group 'com.github.ev3dev-lang-java'
@@ -17,6 +18,7 @@ repositories {
     maven {
         url "https://plugins.gradle.org/m2/"
     }
+    maven { url 'https://jitpack.io' }
 }
 
 jar {
@@ -30,7 +32,7 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
     implementation      group: 'com.jcraft',                          name: 'jsch',       version: '0.1.55'
-    implementation      group: 'com.github.jengelman.gradle.plugins',            name: 'shadow',     version: '5.1.0'
+    implementation      group: 'com.github.johnrengelman',            name: 'shadow',     version: '5.1.0'
     testImplementation  group: 'junit',                               name: 'junit',      version: '4.12'
 }
 
