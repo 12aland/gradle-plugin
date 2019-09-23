@@ -6,8 +6,8 @@ plugins {
     id "com.github.johnrengelman.shadow" version "5.1.0"
 }
 
-group 'com.github.ev3dev-lang-java'
-version '1.6.12'
+group 'com.github.12aland'
+version '1.6.14'
 
 sourceCompatibility = 11
 targetCompatibility = 11
@@ -40,7 +40,7 @@ dependencies {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.ev3dev-lang-java'
+            groupId = 'com.github.12aland'
             artifactId = 'gradle-plugin'
             version = "${version}"
         }
